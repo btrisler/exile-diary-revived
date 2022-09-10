@@ -1,13 +1,13 @@
 {
-  "name": "exile-diary",
+  "name": "exile-diary-revived",
   "version": "0.3.4",
   "main": "main.js",
   "build": {
-    "appId": "com.pathofexile.exilediary",
-    "productName": "Exile Diary",
+    "appId": "com.pathofexile.exilediaryrevived",
+    "productName": "Exile Diary Revived",
     "win": {
       "target": "nsis",
-      "artifactName": "exile-diary-setup-${version}.${ext}",
+      "artifactName": "exile-diary-revived-setup-${version}.${ext}",
       "icon": "./res/img/icons/win/ExileDiary.ico",
       "extraResources": [
         "eng.traineddata"
@@ -23,7 +23,7 @@
     },
     "linux": {
       "target": "deb",
-      "executableName": "Exile-Diary",
+      "executableName": "Exile-Diary-Revived",
       "icon": "./res/img/icons/png",
       "category": "Utility",
       "maintainer": "briansd9"
@@ -45,7 +45,7 @@
   "author": "joshi",
   "repository": {
     "type": "git",
-    "url": "https://github.com/briansd9/exile-diary.git"
+    "url": "https://github.com/btrisler/exile-diary-revived.git"
   },
   "contributors": [],
   "dependencies": {

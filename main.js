@@ -239,7 +239,7 @@ async function init() {
       global.messages = [
         {
           timestamp: moment().format("YYYY-MM-DD HH:mm:ss"),          
-          text: `Exile Diary v${app.getVersion()} started`
+          text: `Exile Diary Revived v${app.getVersion()} started`
         }        
       ];
     }
@@ -404,7 +404,7 @@ function initWindow(window) {
 
 async function createWindow() {
 
-  logger.info(`Starting Exile Diary v${app.getVersion()}`);
+  logger.info(`Starting Exile Diary Revived v${app.getVersion()}`);
   
   await init();
     
@@ -461,7 +461,7 @@ async function createWindow() {
 
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    title: `Exile Diary v${app.getVersion()}`,
+    title: `Exile Diary Revived v${app.getVersion()}`,
     backgroundColor: `#000000`,
     x: 0,
     y: 0,
@@ -604,7 +604,7 @@ function customMinimize(event) {
     if(s.minimizeToTray) {
       if(!trayIcon) {
         trayIcon = new Tray(path.join(__dirname, "res/img/icons/win/ExileDiary.ico"));
-        trayIcon.setToolTip(`Exile Diary v${app.getVersion()}\n${s.activeProfile.characterName} (${s.activeProfile.league} league)`);
+        trayIcon.setToolTip(`Exile Diary Revived v${app.getVersion()}\n${s.activeProfile.characterName} (${s.activeProfile.league} league)`);
         trayIcon.setContextMenu(
           Menu.buildFromTemplate([
             { label: 'Quit', role: 'quit' } 
@@ -683,7 +683,7 @@ function saveScreenshot(img) {
   let opts = {    
     type: "question",
     buttons: [ "Save to file", "Upload to imgur", "Cancel" ],
-    title: "Exile Diary",
+    title: "Exile Diary Revived",
     message: "Screenshot generated",
     detail: "Where should the generated screenshot be saved?",
     checkboxLabel: "Don't ask again"  

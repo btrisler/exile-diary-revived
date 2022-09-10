@@ -359,7 +359,7 @@ class Utils {
       path: path,
       method: 'GET',
       headers: {
-        "User-Agent": `exile-diary/${app.getVersion()}`,
+        "User-Agent": `exile-diary-revived/${app.getVersion()}`,
         "Referer": 'http://www.pathofexile.com/',
         "Cookie": `POESESSID=${poesessid}`
       }
